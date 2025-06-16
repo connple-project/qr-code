@@ -11,7 +11,7 @@ class QrGenerator extends Component
 {
     use WithFileUploads;
 
-    public string $input = 'test';
+    public string $input = '';
     public string $color = '#000000';
     public int $size = 200;
     public int $margin = 1;
