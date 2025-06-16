@@ -1,8 +1,10 @@
 <?php
 
+use App\Livewire\QrGenerator;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
+/*
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
@@ -20,3 +22,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+*/
+
+Route::get('/', QrGenerator::class)
+    ->name('home');
